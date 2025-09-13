@@ -27,15 +27,18 @@
         <div class="form-group">
           <label for="fullName">ФИО:</label>
           <input type="text" id="fullName" name="fullName" required>
+          <!-- Текстовое поле в 1 строку -->
         </div>
 
-        <div class="form-group">
+        <div class="form-group"> 
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
+          <!-- Текстовое поле в 1 строку -->
         </div>
 
         <div class="form-group">
           <label>Откуда узнали о нас?</label>
+
           <div class="radio-group"> <!-- Группа "радио-кнопок"-->
             <input type="radio" id="source_friends" name="source" value="friends">
             <label for="source_friends">От друзей</label>
@@ -61,15 +64,18 @@
 
         <div class="form-group">
           <label for="attachment">Вложение:</label>
+          <!-- Поле для прикрепления файла -->
           <input type="file" id="attachment" name="attachment">
         </div>
 
         <div class="form-group-checkbox">
           <input type="checkbox" id="consent" name="consent" required>
+          <!-- Чекбокс -->
           <label for="consent">Даю согласие на обработку персональных данных</label>
         </div>
 
         <button type="submit" class="submit-btn">Отправить</button>
+        <!-- Кнопка -->
       </form>
     </section>
   </main>
