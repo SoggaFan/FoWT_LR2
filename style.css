@@ -1,0 +1,219 @@
+/* Сброс стилей для всех элементов, вроде как неоходим */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили для body: шрифт, цвет, фон, межстрочный интервал */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+/* Стили для шапки сайта */
+header {
+  background-color: #ff7f50; /* Оранжевый фон */
+  color: white; /* Белый текст */
+  display: flex; /* Flex-контейнер, нужен для создания адаптивных макетов */
+  justify-content: space-between; /* Равномерно распределяет элементы по краям */
+  align-items: center; /* Вырвнивает содержимое flex-контейнера по центру */
+  padding: 15px 30px; /* Внутренние отступы */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Тень для шапки */
+}
+
+/* Стили для логотипа */
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Стили для ссылок в навигации */
+nav a {
+  margin-left: 20px; /* Отступ между ссылками */
+  text-decoration: none; /* Без подчеркивания */
+  font-weight: 600;
+  color: white;
+  transition: opacity 0.3s; /* Плавное изменение прозрачности при загрузке сайта */
+}
+
+/* Эффект наведения на ссылки */
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* Стили для основного контента */
+main {
+  padding: 30px;
+  max-width: 900px; /* Ограничиваем ширину контента для лучшей читаемости */
+  margin: 0 auto; /* Центрируем блок main */
+}
+
+/* Отступ между секциями */
+section {
+  margin-bottom: 50px;
+}
+
+/* Стили для заголовков второго уровня */
+h2 {
+  font-size: 28px; /* Увеличили размер заголовка */
+  margin-bottom: 20px;
+  color: #ff7f50;
+  text-align: center; /* Центрируем заголовки секций */
+}
+
+/* Стили для изображений */
+img {
+  width: 100%; /* Ширина на 100% от родительского блока */
+  max-width: 500px;
+  border-radius: 12px; /* Скругление углов */
+  margin: 0 auto 15px; /* Центрируем картинку */
+  display: block;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Тень для изображения */
+}
+
+/* Стили для таблицы */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Убирает двойные линии */
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Тень */
+  border-radius: 8px;
+  overflow: hidden; /* Скрываем всё, что выходит за скруглённые углы */
+}
+
+/* Стили для ячеек таблицы */
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Стили для заголовков таблицы */
+th {
+  background-color: #ff7f50;
+  color: white;
+}
+
+/* Эффект наведения на строки таблицы */
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Стили для маркированных списков */
+ul {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding-left: 0;
+}
+
+/* Стили для элементов списка */
+ul li {
+  background: #fff;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Небольшая тень для каждого пункта */
+}
+
+/* Стили для футера */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Стили для ссылок в футере */
+footer a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+/* Эффект наведения на ссылки в футере */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* --- НОВЫЕ СТИЛИ ДЛЯ ФОРМЫ ОБРАТНОЙ СВЯЗИ --- */
+
+/* Стили для контейнера формы */
+.feedback-form {
+  background: white; /* Белый фон */
+  padding: 30px; /* Внутренние отступы */
+  border-radius: 12px; /* Скругление углов */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Тень */
+  max-width: 700px; /* Максимальная ширина формы */
+  margin: 0 auto; /* Центрирование */
+}
+
+/* Стили для группы элементов (метка + поле ввода) */
+.form-group {
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стили для текстовых меток */
+.form-group label {
+  display: block; /* Метка занимает всю ширину */
+  margin-bottom: 8px; /* Отступ от поля ввода */
+  font-weight: 600; /* Жирный шрифт */
+}
+
+/* Общие стили для полей ввода, текстовой области и селектора */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea,
+.form-group select {
+  width: 100%; /* Занимают всю ширину родителя */
+  padding: 12px; /* Внутренние отступы для комфортного ввода */
+  border: 1px solid #ddd; /* Светлая рамка */
+  border-radius: 8px; /* Скругление углов */
+  font-family: 'Montserrat', sans-serif; /* Наследуем шрифт */
+}
+
+/* Стили для группы радио-кнопок */
+.radio-group {
+    display: flex; /* Используем flex для выравнивания в ряд */
+    gap: 20px; /* Расстояние между кнопками */
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+/* Стили для меток у радио-кнопок, чтобы они не были жирными */
+.radio-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Стили для группы с чекбоксом */
+.form-group-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Отступ справа от чекбокса */
+.form-group-checkbox input {
+  margin-right: 10px;
+}
+
+/* Стили для кнопки отправки */
+.submit-btn {
+  display: block; /* Блочный элемент для применения ширины */
+  width: 100%; /* На всю ширину формы */
+  padding: 15px; /* Большие отступы для удобного нажатия */
+  background-color: #ff7f50; /* Фирменный оранжевый цвет */
+  color: white; /* Белый текст */
+  border: none; /* Убираем рамку */
+  border-radius: 8px; /* Скругляем углы */
+  font-size: 18px; /* Крупный шрифт */
+  font-weight: 600; /* Жирный текст */
+  cursor: pointer; /* Курсор в виде руки при наведении */
+  transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+/* Эффект при наведении на кнопку */
+.submit-btn:hover {
+  background-color: #e56a3a; /* Более тёмный оттенок оранжевого */
+}
