@@ -11,7 +11,7 @@
   <header>
     <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">LunchBox Express</a></div>
     <nav>
-      <a href="index.html#about">О нас</a> <!-- "Обратная ссылка на index.html-->
+      <a href="index.html#about">О нас</a> 
       <a href="index.html#menu">Меню</a>
       <a href="index.html#delivery">Доставка</a>
       <a href="feedback.html">Обратная связь</a>
@@ -23,23 +23,20 @@
     <section id="feedback-form">
       <h2>Форма обратной связи</h2>
       <form action="https://httpbin.org/post" method="POST" class="feedback-form" enctype="multipart/form-data">
-      <!-- Ссылка на указаный в методичке сайт + информация о форме -->
         <div class="form-group">
           <label for="fullName">ФИО:</label>
-          <input type="text" id="fullName" name="fullName" required>
-          <!-- Текстовое поле в 1 строку -->
+          <input placeholder = "Иванов Иван Иванович" type="text" id="fullName" name="fullName" required>
         </div>
 
         <div class="form-group"> 
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
-          <!-- Текстовое поле в 1 строку -->
         </div>
 
         <div class="form-group">
           <label>Откуда узнали о нас?</label>
 
-          <div class="radio-group"> <!-- Группа "радио-кнопок"-->
+          <div class="radio-group">
             <input type="radio" id="source_friends" name="source" value="friends">
             <label for="source_friends">От друзей</label>
             <input type="radio" id="source_internet" name="source" value="internet">
@@ -51,31 +48,28 @@
         
         <div class="form-group">
           <label for="appealType">Тип обращения:</label>
-          <select id="appealType" name="appealType"> <!-- Группа "выпадающего списка"-->
+          <select id="appealType" name="appealType">
             <option value="complaint">Жалоба</option>
             <option value="suggestion">Предложение</option>
           </select>
         </div>
 
-        <div class="form-group"> <!-- Большое текстовое поле для обратной связи -->
+        <div class="form-group"> 
           <label for="message">Текст сообщения:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
 
         <div class="form-group">
           <label for="attachment">Вложение:</label>
-          <!-- Поле для прикрепления файла -->
           <input type="file" id="attachment" name="attachment">
         </div>
 
         <div class="form-group-checkbox">
           <input type="checkbox" id="consent" name="consent" required>
-          <!-- Чекбокс -->
           <label for="consent">Даю согласие на обработку персональных данных</label>
         </div>
 
         <button type="submit" class="submit-btn">Отправить</button>
-        <!-- Кнопка -->
       </form>
     </section>
   </main>
